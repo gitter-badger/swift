@@ -10,6 +10,7 @@ int main(int argc, char **argv) {
     line = freadline(test);
     while (line != NULL) {
       puts(line);
+      free(line);
       line = freadline(test);
     }
   }
