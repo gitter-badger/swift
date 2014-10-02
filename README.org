@@ -1,3 +1,18 @@
+This is an alpha-level development repository and its history is
+subject to rewrite to keep things tidy until further notice.  Pull
+requests are of course welcome (if potentially unwarranted at this
+stage), but please raise a related issue before doing so.  This will
+allow discussion at this infant stage and, more importantly, will
+server as a red-flag for me if I ever need to rewrite the history.
+
+Note that, with the above, there are many files in this repository
+that serve as notes/reminders and many that simply server no further
+purpose.  The files that I /am/ working with include
+- =Process.[ch]pp= :: encapsulate a single-threaded process
+- =ProcessGroup.[ch]pp= :: multi-threading support
+- =test.cpp= :: driver
+- =makefile= :: build
+
 #+Title: Swift: The /Fast/ TeX Automation Tool
 #+Author: Sean Allred
 #+Email: tex@seanallred.com
@@ -18,21 +33,6 @@ it also hopes to add new features:
   % swift: @ path/to/rules
   % swift: @ path/to/more/rules
   #+end_src
-
-This is an alpha-level development repository and its history is
-subject to rewrite to keep things tidy until further notice.  Pull
-requests are of course welcome (if potentially unwarranted at this
-stage), but please raise a related issue before doing so.  This will
-allow discussion at this infant stage and, more importantly, will
-server as a red-flag for me if I ever need to rewrite the history.
-
-Note that, with the above, there are many files in this repository
-that serve as notes/reminders and many that simply server no further
-purpose.  The files that I /am/ working with include
-- =Process.[ch]pp= :: encapsulate a single-threaded process
-- =ProcessGroup.[ch]pp= :: multi-threading support
-- =test.cpp= :: driver
-- =makefile= :: build
 
 * License
 Taking its cue from cereda/arara, this project is released under the
