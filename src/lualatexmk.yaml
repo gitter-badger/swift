@@ -1,10 +1,10 @@
-!config
-# LaTeXmk with LuaLaTeX rule for arara
-# author: Brent Longborough
-# requires: arara 3.0+
+description: LaTeXmk with LuaLaTeX rule for arara
+author: Brent Longborough
+requires: arara 3.0+
 identifier: lualatexmk
 name: luaLaTeXmK
-command: <arara> latexmk -e '$pdflatex=q/lualatex%O%S/' @{action} @{synctex} @{shell} @{options} @{style} -pdf "@{file}"
+command: ( latexmk -e '$pdflatex=q/lualatex%O%S/' @{action} @{synctex}
+           @{shell} @{options} @{style} -pdf "@{file}" )
 arguments:
 - identifier: action
   flag: <arara> --interaction=@{parameters.action}
